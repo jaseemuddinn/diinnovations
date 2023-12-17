@@ -1,0 +1,119 @@
+@import "../../commonstyles/variables.scss";
+
+
+.hamburger {
+    display: none;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-2%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes shrink {
+    0% {
+        width: 95%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.hamburger .menuList.container {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    opacity: 0.97;
+    color: #fafafa;
+    transition: height 0.3s ease;
+    z-index: 4;
+}
+
+.hamburger .menuList.container .menuList {
+    padding-top: 3rem;
+}
+
+.hamburger .menuButton.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    background: white;
+    width: 100%;
+    color: #777; 
+}
+
+.hamburger .item.container {
+    opacity: 0;
+    animation: 1s appear forwards;
+}
+
+.hamburger .item.container .menuItem {
+    font-size: 1.2rem;
+    margin: 0 5%;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    animation: 0.5s slideIn forwards;
+}
+
+.hamburger .item.container .menuItem a {
+    padding: 1rem 0;
+    display: block;
+    color: #777; /* Assuming $grey3 is equivalent to #777 */
+    cursor: pointer;
+}
+
+.hamburger .item.container .line {
+    width: 90%;
+    height: 1px;
+    background: #f0f0f0; /* Assuming $grey1 is equivalent to #f0f0f0 */
+    margin: 0 auto;
+    animation: 0.5s shrink forwards;
+}
+
+.hamburger .logo {
+    margin: 0 auto;
+    transform: translateX(-20px);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 1.15rem;
+}
+
+.hamburger .logo .brandName:first-letter {
+    color: #f19f43fc; 
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    transition: filter 0.5s ease;
+}
+
+@media only screen and (max-width: 767px) {
+    .hamburger {
+        display: initial;
+    }
+}

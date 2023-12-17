@@ -1,0 +1,36 @@
+@import "../../commonstyles/variables.scss";
+
+@media only screen and (max-width: 767px) {
+    .head {
+        color: $text-secondary;
+        display: block;
+        text-align: center;
+        font-size: 1.15rem;
+        line-height: 25px;
+        padding: 20px 0;
+        span {
+            position: relative;
+            &:before {
+                content: ' ';
+                height: 2px;
+                width: 25px;
+                background-color: $brandColor;
+                position: absolute;
+                left: -35px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:after {
+                content: ' ';
+                height: 2px;
+                width: 25px;
+                background-color: $brandColor;
+                position: absolute;
+                right: -35px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

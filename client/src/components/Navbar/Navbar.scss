@@ -1,0 +1,48 @@
+@import "../../commonstyles/variables.scss";
+
+.navigation {
+    .navbar {
+        padding: 30px 30px;
+        margin-bottom: 10px;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $grey3;
+            font-size: 0.85rem;
+            padding: 20px;
+            transition: color ease-in 200ms;
+
+            &:first-child {
+                padding-left: 0px;
+            }
+
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+
+            &:hover, &.active {
+                color: $brandColor;
+            }
+
+            &.active {
+                span:after {
+                    width: 100%;
+                }
+            }
+            span {
+                position: relative;
+                &:after {
+                    content: ' ';
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    height: 2px;
+                    background-color: $brandColor;
+                    width: 0%;
+                }
+            }
+
+        }
+    }
+}

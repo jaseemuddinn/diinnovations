@@ -1,0 +1,92 @@
+@import './variables.scss';
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+iframe {
+    border: 0;
+}
+
+
+body,
+button,
+input,
+pre,
+select,
+textarea {
+    font-family: 'Nunito', sans-serif;
+}
+
+code,
+pre {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    line-height: 1.5px;
+    font-family: 'Nunito', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background: white;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+    color: $text-primary;
+    width: 100%;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+button:focus,
+div[role="button"]:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+* {
+    box-sizing: border-box;
+}

@@ -1,0 +1,67 @@
+@import './variables.scss';
+@import './normalize.scss';
+@import './flex.scss';
+
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #eee;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e0ebee;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+
+.shine {
+    background: #eee;
+    background-image: linear-gradient(
+                    to right,
+                    #eee 0%,
+                    #edeef1 20%,
+                    #eee 40%,
+                    #eee 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 800px 104px;
+    display: inline-block;
+    position: relative;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeholderShimmer;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes placeholderShimmer {
+    0% {
+        background-position: -468px 0;
+    }
+
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+#root, .mainContainer {
+    //height: 100%;
+}
+
+
+@media only screen and (max-width: 767px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+.brandColor {
+    color: $brandColor;
+}

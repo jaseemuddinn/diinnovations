@@ -1,0 +1,103 @@
+@import "../../commonstyles/variables.scss";
+
+.contact {
+    flex: 1 0 0;
+
+    .mapouter {
+        position: relative;
+        text-align: right;
+        height: 300px;
+        width: 300px;
+    }
+
+    &.isLarge {
+        .mapouter, .gmap_canvas {
+            height: 500px;
+            width: 600px;
+        }
+    }
+
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 300px;
+        width: 300px;
+    }
+
+    .address {
+        padding: 0 50px;
+        color: $grey4;
+        align-self: flex-end;
+
+        .head {
+            font-size: 1.33rem;
+            color: $text-primary
+        }
+
+        p {
+            line-height: 25px;
+        }
+
+        .contactItem {
+            display: block;
+
+            a {
+                line-height: 25px;
+                padding-left: 4px;
+                color: $grey4;
+
+                &:hover {
+                    color: $text-primary
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .contact.flex-row {
+        display: flex;
+        flex-direction: column-reverse;
+        .head {
+            color: $text-secondary;
+            display: block;
+            text-align: center;
+            font-size: 1.15rem;
+            line-height: 25px;
+            padding: 20px 0;
+            span {
+                position: relative;
+                &:before {
+                    content: ' ';
+                    height: 2px;
+                    width: 25px;
+                    background-color: $brandColor;
+                    position: absolute;
+                    left: -35px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                &:after {
+                    content: ' ';
+                    height: 2px;
+                    width: 25px;
+                    background-color: $brandColor;
+                    position: absolute;
+                    right: -35px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        .address {
+            padding-bottom: 20px;
+            width: 100%;
+            .head {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+}
