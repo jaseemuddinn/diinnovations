@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Routes, Route, Outlet, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Loadable from 'react-loadable';
 
 const AsyncPageNotFound = Loadable({
@@ -7,10 +7,10 @@ const AsyncPageNotFound = Loadable({
     loading: () => <div className="hide">loading page...</div>,
 });
 
-const LandingPage = Loadable({
-    loader: () => import(/* webpackChunkName: "Home" */ '../views/Home'),
-    loading: () => <div className="hide">loading page...</div>,
-});
+// const LandingPage = Loadable({
+//     loader: () => import(/* webpackChunkName: "Home" */ '../views/Home'),
+//     loading: () => <div className="hide">loading page...</div>,
+// });
 
 const Home = Loadable({
     loader: () => import(/* webpackChunkName: "Home" */ '../views/Home'),

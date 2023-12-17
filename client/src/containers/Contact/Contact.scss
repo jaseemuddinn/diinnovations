@@ -1,7 +1,9 @@
 @import "../../commonstyles/variables.scss";
 
 .contact {
-    flex: 1 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
 
     .mapouter {
         position: relative;

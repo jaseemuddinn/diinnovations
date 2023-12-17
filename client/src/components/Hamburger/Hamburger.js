@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Hamburger.scss';
 import { NAV } from '../../constants/appConstants';
 import { getPathByName } from '../../routes/routerManager';

@@ -4,15 +4,15 @@
     min-height: 100vh;
     max-width: 1020px;
     margin: 0 auto;
-    padding: 50px 20px 10px 20px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
-    
+    flex-grow: 1;
     footer {
+        margin-top: auto;
         font-size: 0.85rem;
         color: $text-secondary;
         padding-top: 20px;
-        margin-top: auto;
         .socialIcons {
             i {
                 padding: 8px;

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Contact.scss';
 import classNames from '../../utils/classNames';
 
@@ -19,14 +18,15 @@ const Contact = () => {
       <div className="mapouter">
         <div className="gmap_canvas">
           <iframe
+          title='map'
             width={width}
             height={height}
             id="gmap_canvas"
             src="https://maps.google.com/maps?q=savita%20vihar%20market&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameBorder="0"
-            scrolling="no"
-            marginHeight="0"
-            marginWidth="0"
+            // frameBorder="0"
+            // scrolling="no"
+            // marginHeight="0"
+            // marginWidth="0"
           ></iframe>
         </div>
       </div>

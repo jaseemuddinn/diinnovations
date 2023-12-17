@@ -11,26 +11,28 @@ import work6 from '../../Img/work6.png'
 
 
 function HomeCarousel() {
+    const carouselStyle = {
+        borderRadius: "12px",
+    }
     return (
-
-        <Carousel className='custom-carousel' infiniteLoop autoPlay emulateTouch showThumbs={false} showIndicators={false} showStatus={false}>
+        <Carousel infiniteLoop autoPlay emulateTouch showThumbs={false} showIndicators={false} showStatus={false} style={carouselStyle}>
             <div className='carousel-item'>
-                <img src={work1} />
+                <img src={work1} alt='interior design'/>
             </div>
             <div className='carousel-item'>
-                <img src={work2} />
+                <img src={work2} alt='interior design'/>
             </div>
             <div className='carousel-item'>
-                <img src={work3} />
+                <img src={work3} alt='interior design'/>
             </div>
             <div className='carousel-item'>
-                <img src={work4} />
+                <img src={work4} alt='interior design'/>
             </div>
             <div className='carousel-item'>
-                <img src={work5} />
+                <img src={work5} alt='interior design'/>
             </div>
             <div className='carousel-item'>
-                <img src={work6} />
+                <img src={work6} alt='interior design'/>
             </div>
         </Carousel>
 
