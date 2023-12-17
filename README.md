@@ -62,6 +62,3 @@ This project is a website for DInnovations, an architectural firm specializing i
 
 - **views:** Contains different views such as Home, Projects, About, and Contact.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
