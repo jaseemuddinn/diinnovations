@@ -57,6 +57,9 @@
     .profile.flex-row {
         display: flex;
         flex-direction: column-reverse;
+        .profileDesc{
+            margin-left: 5px;
+        }
         .imageContainer {
             padding: 20px 0;
         }
